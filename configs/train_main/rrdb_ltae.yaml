@@ -1,0 +1,26 @@
+base_config:
+  - ./sr_base.yaml
+  - ./config_base.yaml
+  - ./df2k4x.yaml
+trainer_cls: tasks.rrdb_ltae.RRDBLtae
+# model
+hidden_size: 64
+lr: 0.0002
+num_block: 8
+
+# train and eval
+max_updates: 400000
+val_check_interval: 50000
+save_ckpt_interval: 40000
+max_s2_images: 8
+
+
+num_workers: 1
+main_loss_weight: 1.0
+px_loss_weight: 1.0
+grad_px_loss_weight: 0.5
+temp_grad_mag_loss_weight: 0.2
+gray_value_px_loss_weight: 1.0
+
+
+cond_net_ckpt: ""

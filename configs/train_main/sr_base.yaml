@@ -1,0 +1,8 @@
+base_config: ./config_base.yaml
+data_interp: bicubic # bilinear | bicubic
+data_augmentation: false
+max_updates: 400000
+valid_steps: 3
+num_sanity_val_steps: 3
+test_save_png: true
+gen_dir_name: ''

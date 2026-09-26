@@ -1,0 +1,26 @@
+base_config:
+  - ./sr_base.yaml
+  - ./config_base.yaml
+  - ./df2k4x.yaml
+trainer_cls: tasks.highresnet_ltae.HighResNetLTAETrainer
+# model
+hidden_size: 64
+lr: 0.0007
+num_block: 17
+
+# train and eval
+max_updates: 4
+val_check_interval: 1
+save_ckpt_interval: 1
+save_intermediate: false
+max_s2_images: 8
+misr_ref_image: closest
+num_workers: 1
+
+main_loss_weight: 1.0
+
+px_loss_weight: 1.0
+grad_px_loss_weight: 0.5
+temp_grad_mag_loss_weight: 0.2
+gray_value_px_loss_weight: 1.0
+cond_net_ckpt: "D:\\kanyamahanga\\Datasets\\pretrain_weights\\highresnet_ltae_ckpt\\model_ckpt_steps_400000.ckpt"
