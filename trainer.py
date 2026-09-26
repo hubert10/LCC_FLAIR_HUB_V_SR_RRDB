@@ -576,5 +576,5 @@ if __name__ == "__main__":
 # scp -r "D:/kanyamahanga/Datasets/FLAIR_HUB/data/*" nhgnkany@transfer.cluster.uni-hannover.de:/bigwork/nhgnkany/FLAIR_HUB/
 
 
-# sudo sshfs eouser@74.63.7.39:/hubert_storage/  -o _netdev,user,idmap=user,allow_other,default_permissions,uid=1000,gid=1000,IdentityFile=/home/eouser/.ssh/flair,umask=000
-# sudo sshfs -o IdentityFile=/home/eouser/.ssh/flair.pem eouser@74.63.7.39:/hubert_storage /hubert_storage
+# sudo sshfs eouser@74.63.7.39:/my_data/  -o _netdev,user,idmap=user,allow_other,default_permissions,uid=1000,gid=1000,IdentityFile=/home/eouser/.ssh/flair,umask=000
+# sudo sshfs -o IdentityFile=/home/eouser/.ssh/flair.pem eouser@74.63.7.39:/my_data /my_data

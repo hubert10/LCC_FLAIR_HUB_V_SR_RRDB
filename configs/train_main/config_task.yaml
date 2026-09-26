@@ -1,13 +1,13 @@
 paths :   
-    out_folder: "/hubert_storage/Results/LCC_FLAIR_HUB_V_SR_RRDB/"
+    out_folder: "/my_data/Results/LCC_FLAIR_HUB_V_SR_RRDB/"
     out_model_name: "seg"
 
-    train_csv: /hubert_storage/FLAIR_HUB/ALL_CSV/FLAIR_HUB_TRAIN.csv
-    val_csv: /hubert_storage/FLAIR_HUB/ALL_CSV/FLAIR_HUB_VALID.csv
-    test_csv: /hubert_storage/FLAIR_HUB/ALL_CSV/FLAIR_HUB_TEST.csv
-    global_mtd_folder: /hubert_storage/FLAIR_HUB/GLOBAL_ALL_MTD/
+    train_csv: /my_data/FLAIR_HUB/ALL_CSV/FLAIR_HUB_TRAIN.csv
+    val_csv: /my_data/FLAIR_HUB/ALL_CSV/FLAIR_HUB_VALID.csv
+    test_csv: /my_data/FLAIR_HUB/ALL_CSV/FLAIR_HUB_TEST.csv
+    global_mtd_folder: /my_data/FLAIR_HUB/GLOBAL_ALL_MTD/
     ckpt_model_path: 
-    cond_net_ckpt: "/hubert_storage/pretrain_weights/LCC_SITS_MaxViT_UPerNet_10/checkpoints/last.ckpt"
+    cond_net_ckpt: "/my_data/pretrain_weights/LCC_SITS_MaxViT_UPerNet_10/checkpoints/last.ckpt"
 
 tasks: 
     train: True

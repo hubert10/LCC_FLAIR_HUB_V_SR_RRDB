@@ -36,4 +36,4 @@ def unzip_and_delete(folder_path: str):
 
 
 # unzip_and_delete("D:\kanyamahanga\Datasets\FLAIR_HUB_TOY")
-unzip_and_delete("/hubert_storage/FLAIR_HUB")
+unzip_and_delete("/my_data/FLAIR_HUB")
