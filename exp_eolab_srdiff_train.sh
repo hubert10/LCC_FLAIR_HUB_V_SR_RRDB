@@ -13,11 +13,21 @@
 # #SBATCH --error logs/exp_misr_joint_srdiff_lcc_train_backbone_hr5_sr4_%j.err
 # source load_modules.sh
 
-export CONDA_ENVS_PATH=$HOME/miniconda3/envs
+# export CONDA_ENVS_PATH=$HOME/miniconda3/envs
+# DATA_DIR="/my_data/"
+# export DATA_DIR
+# source ~/miniconda3/etc/profile.d/conda.sh
+# conda activate /my_data/flair_venv
+# which python
+# cd $HOME/exp_2026/LCC_FLAIR_HUB_V_SR_RRDB
+# python trainer.py --config_file=./configs/train_main/ --exp_name rrdb_ltae_ckpt --reset
+
+
+export CONDA_ENVS_PATH=$HOME/.conda/envs
 DATA_DIR="/my_data/"
 export DATA_DIR
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate /my_data/flair_venv
+source /home/eouser/flair_venv/bin/activate
 which python
 cd $HOME/exp_2026/LCC_FLAIR_HUB_V_SR_RRDB
 python trainer.py --config_file=./configs/train_main/ --exp_name rrdb_ltae_ckpt --reset
+
